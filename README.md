@@ -1,6 +1,6 @@
 # AiSkills
 
-Personal collection of [Claude Code](https://claude.com/claude-code) skills — one folder per skill, each with a `SKILL.md`. This repo is the single copy; every place Claude Code needs these skills points *at* it rather than holding its own copy.
+Personal collection of AI skills — one folder per skill, each with a `SKILL.md`. This repo is the single copy; every place Claude Code needs these skills points *at* it rather than holding its own copy. These have been tested to work well in Claude Code and some tests have been done in Github CLI and seem to perform fine there as well.
 
 ## Layout
 
