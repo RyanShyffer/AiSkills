@@ -7,7 +7,7 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/ask-matt/SKILL.md",
-      "vendoredHash": "affab2673308aa529084e8cfe19b8f335b8a1bce",
+      "vendoredHash": "49a1494c59549bfdd1d5c4a1326c5439bb670968",
       "vendoredAt": "2026-07-14"
     },
     "code-review": {
@@ -47,7 +47,7 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel-labs/skills.git",
       "skillPath": "skills/find-skills/SKILL.md",
-      "vendoredHash": "eb6a23305aea6e340d14b9de3766e721f9f4861b",
+      "vendoredHash": "bf5e3afa3feda93740d190556e215ed1d730c564",
       "vendoredAt": "2026-07-14"
     },
     "grill-me": {
@@ -71,7 +71,7 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/productivity/grilling/SKILL.md",
-      "vendoredHash": "0ace40ac10f5c0b1534324e4e109ebfa831fb361",
+      "vendoredHash": "e4cb9ad996ccfac20de44ad811e4366e36c6973e",
       "vendoredAt": "2026-07-14"
     },
     "handoff": {
@@ -95,7 +95,7 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/improve-codebase-architecture/SKILL.md",
-      "vendoredHash": "e5beae48471adf87c513b5cbcb0ca347467546da",
+      "vendoredHash": "efa3a95bba7450d54e76996c0d5afd1be26bb817",
       "vendoredAt": "2026-07-14"
     },
     "prototype": {
@@ -103,7 +103,7 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/prototype/SKILL.md",
-      "vendoredHash": "046ef7c3aae3ec1934b075b26dba1cf87c9b1d5a",
+      "vendoredHash": "1dd8424b332960c0c11e2c3af0d15be1cce7d801",
       "vendoredAt": "2026-07-14"
     },
     "research": {
@@ -119,7 +119,7 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/setup-matt-pocock-skills/SKILL.md",
-      "vendoredHash": "3676b312e22e6b615c24e575cf9382a6da3016dd",
+      "vendoredHash": "c50e0e9f5c5f4e66c5369a8dce50aed748bdcb55",
       "vendoredAt": "2026-07-14"
     },
     "tdd": {
@@ -151,7 +151,7 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/to-tickets/SKILL.md",
-      "vendoredHash": "b62245172caa8bcc75b490c665566e9ec999cda8",
+      "vendoredHash": "a651e162df61f83b184478d8ba6ebb82cacaddbd",
       "vendoredAt": "2026-07-14"
     },
     "triage": {
@@ -167,7 +167,7 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/wayfinder/SKILL.md",
-      "vendoredHash": "83a96a4454c069148d8648fd21ca62a58ac15db2",
+      "vendoredHash": "78c0a3879483bffa90f692f6037b772007f85736",
       "vendoredAt": "2026-07-14"
     },
     "writing-great-skills": {
