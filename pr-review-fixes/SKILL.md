@@ -25,6 +25,8 @@ gh api graphql -f query='
     repository(owner: $owner, name: $repo) {
       pullRequest(number: $number) {
         reviewThreads(first: 100) {
+          pageInfo { hasNextPage endCursor }
+          totalCount
           nodes {
             id
             isResolved
@@ -38,9 +40,11 @@ gh api graphql -f query='
   }' -f owner=<owner> -f repo=<repo> -F number=<pr-number>
 ```
 
-Filter to `isResolved == false`. Each thread's last comment is what a reply should attach to (use its `id` / `databaseId` for the reply mutation). Take reviewer identity from `comments[0].author.login` — do **not** filter by reviewer; Copilot and human threads get the same treatment.
+**`reviewThreads` is paginated at 100 nodes per page — always check `pageInfo.hasNextPage` and `totalCount` before concluding there are zero (or "only these") unresolved threads.** A PR with >100 total threads (resolved + unresolved combined) will silently truncate the first page, and the missed tail is exactly as likely to hold unresolved threads as the front. If `hasNextPage` is true, repeat the query with `after: $cursor` (add `$cursor: String!` to the query variables) using `pageInfo.endCursor`, and keep paging until `hasNextPage` is false. Concatenate all pages' `nodes` before filtering.
 
-If there are zero unresolved threads, say so and stop — nothing to do.
+Filter the full concatenated set to `isResolved == false`. Each thread's last comment is what a reply should attach to (use its `id` / `databaseId` for the reply mutation). Take reviewer identity from `comments[0].author.login` — do **not** filter by reviewer; Copilot and human threads get the same treatment.
+
+If there are zero unresolved threads across *all* pages, say so and stop — nothing to do.
 
 ## 3. Triage each thread
 
