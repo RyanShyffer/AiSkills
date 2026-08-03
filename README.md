@@ -29,9 +29,10 @@ To pick up these skills after cloning this repo:
 1. Clone the repo, e.g. to `C:\Development\AiSkills`.
 2. Symlink each skill folder into your personal skills directory (`~/.claude/skills`) — that's how this repo is actually consumed; Claude Code reads skills from there, not from this repo directly. On Windows, a junction avoids needing symlink permissions:
    ```powershell
-   New-Item -ItemType Junction -Path "$env:USERPROFILE\.claude\skills\<skill-name>" -Target "C:\Development\AiSkills\<skill-name>"
+   Get-ChildItem -Path "C:\Development\AiSkills" -Directory | ForEach-Object {
+       New-Item -ItemType Junction -Path "$env:USERPROFILE\.claude\skills\$($_.Name)" -Target $_.FullName
+   }
    ```
-   Repeat per skill folder (or loop over all of them with `Get-ChildItem -Directory`).
 3. Restart Claude Code (or start a new session) so it picks up the new entries under `~/.claude/skills`.
 
 Editing a `SKILL.md` in the cloned repo takes effect immediately — no copy step, since `~/.claude/skills` just links back here.
